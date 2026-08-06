@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+
+/* =========================================================
+   HUNGRIFY - BASE DESIGN SYSTEM
+   Single source of truth for global tokens & dark mode
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   1. CSS RESET & GLOBAL
+   --------------------------------------------------------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+html.dark-theme .hero__desc,
+html.dark-theme .chip,
+html.dark-theme .cart__count,
+html.dark-theme .menu__head p,
+html.dark-theme .card__cat{
+    color: var(--text-secondary);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+}
+
+/* ---------------------------------------------------------
+   2. ROOT VARIABLES (Design Tokens)
+   --------------------------------------------------------- */
+:root {
+    /* Colors */
+    --primary: #FF7A00;
+    --primary-hover: #E86900;
+    --primary-light: #FFF1E6;
+    --secondary: #0F172A;
+    --secondary-light: #1E293B;
+    --accent: #FFD166;
+    --background: #FFF8F2;
+    --surface: #FFFFFF;
+    --text-primary: #1E293B;
+    --text-secondary: #64748B;
+    --border: #E2E8F0;
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+    --star: #FBBF24;
+
+    /* Typography */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Border Radius */
+    --rounded-xs: 6px;
+    --rounded-sm: 10px;
+    --rounded-md: 14px;
+    --rounded-lg: 18px;
+    --rounded-xl: 24px;
+    --rounded-pill: 999px;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+    --space-xxxl: 35px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, .05);
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, .08);
+    --shadow-lg: 0 12px 35px rgba(0, 0, 0, .12);
+    --shadow-orange: 0 10px 24px rgba(255, 122, 0, 0.28);
+
+    /* Animation */
+    --transition: .3s ease;
+    --hover-scale: 1.03;
+    --button-hover: translateY(-2px);
+    
+    /* Layout */
+    --max-width: 1280px;
+    --container-width: 90%;
+    --grid-gap: 24px;
+    --navbar-height: 80px;
+}
+
+/* ---------------------------------------------------------
+   3. GLOBAL TYPOGRAPHY & BODY
+   --------------------------------------------------------- */
+body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+h1, .h1 { font-weight: 700; font-size: 3rem; line-height: 1.15; }
+h2, .h2 { font-weight: 600; font-size: 2.2rem; line-height: 1.2; }
+h3, .h3 { font-weight: 600; font-size: 1.6rem; line-height: 1.3; }
+h4, .h4 { font-weight: 600; font-size: 1.2rem; }
+
+/* ---------------------------------------------------------
+   4. SCROLLBARS
+   --------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: var(--rounded-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+/* ---------------------------------------------------------
+   5. DARK THEME OVERRIDES
+   --------------------------------------------------------- */
+html.dark-theme {
+    --primary: #FF8C2A;
+    --primary-hover: #FF7A00;
+    --primary-light: rgba(255, 122, 0, 0.12);
+    --secondary: #0B1120;
+    --secondary-light: #CBD5E1;
+    --accent: #FFD166;
+    --background: #0F172A;
+    --surface: #1E293B;
+    --text-primary: #F1F5F9;
+    --text-secondary: #94A3B8;
+    --border: #334155;
+    --success: #4ADE80;
+    --warning: #FBBF24;
+    --danger: #F87171;
+    --star: #FBBF24;
+    
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 12px 35px rgba(0, 0, 0, 0.45);
+    --shadow-orange: 0 10px 24px rgba(255, 122, 0, 0.2);
+}
+
+html.dark-theme .btn--ghost{
+    color: var(--text-primary);
+}
+
+html.dark-theme .btn--ghost:hover{
+    color: var(--primary);
+}
+
+html.dark-theme ::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+html.dark-theme ::-webkit-scrollbar-thumb {
+    background: var(--border);
+}
+
+html.dark-theme ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+/* Base keyframes for loaders */
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+@keyframes shimmer-pixel {
+    0% { background-position: -400px 0; }
+    100% { background-position: 400px 0; }
+}
+
+/* ---------------------------------------------------------
+   6. SPECIFIC COMPONENT DARK THEME OVERRIDES
+   --------------------------------------------------------- */
+html.dark-theme .nav {
+    background: rgba(30, 41, 59, 0.92); /* Menu dark nav */
+}
+html.dark-theme .nav__links a {
+    color: var(--text-primary);
+}
+html.dark-theme .nav__links a:hover, html.dark-theme .nav__links a.is-active {
+    background: rgba(255, 122, 0, 0.12);
+}
+html.dark-theme .catnav {
+    background: rgba(15, 23, 42, 0.95); /* Catnav dark */
+}
+html.dark-theme .mcart {
+    background: var(--surface);
+    color: var(--text-primary);
+}
+html.dark-theme .btn-danger {
+    background: rgba(239, 68, 68, 0.2);
+}
+html.dark-theme .payment-card:hover, html.dark-theme .payment-card.active {
+    background-color: rgba(255, 122, 0, 0.12);
+}

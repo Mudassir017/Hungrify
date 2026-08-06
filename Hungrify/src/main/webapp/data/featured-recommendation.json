@@ -1,0 +1,19 @@
+{
+  "recommendationTitle": "Chef's Special",
+  "dishId": "dish-001",
+  "dishName": "Butter Chicken",
+  "dishImage": "https://static.toiimg.com/thumb/53205522.cms?imgsize=302803&width=800&height=800",
+  "dishImageAlt": "Truffle Mushroom Pasta with creamy sauce",
+  "restaurantId": "rest-001",
+  "restaurantName": "Paapi Pet",
+  "cuisine": "North Indian",
+  "rating": 4.9,
+  "price": 299.00,
+  "currency": "INR",
+  "deliveryTimeMinutes": 20,
+  "availability": "available",
+  "availabilityLabel": "Available",
+  "description": "Butter chicken cooked in a butter-based gravy which is known for its creamy, rich texture.",
+  "ctaLabel": "Order Now",
+  "ctaUrl": "#restaurants"
+}

@@ -1,0 +1,250 @@
+/*=========================================
+    AUTH PAGE
+=========================================*/
+.auth-page {
+	min-height: calc(100vh - var(--navbar-height));
+	display: flex;
+	align-items: center;
+	padding: var(--space-xxxl) 0;
+}
+
+.auth-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--space-xxl);
+}
+
+/*=========================================
+    BRAND SECTION
+=========================================*/
+.auth-brand {
+	display: flex;
+	justify-content: center;
+	gap: var(--space-xl);
+}
+
+.auth-brand-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.auth-title {
+	margin: var(--space-lg) 0;
+	max-width: 520px;
+}
+
+.auth-description {
+	max-width: 500px;
+	font-size: 1.05rem;
+}
+
+.auth-card {
+	width: 100%;
+	max-width: 480px;
+	padding: 40px;
+}
+
+/*=========================================
+    TRUST CARDS
+=========================================*/
+.trust-list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-md);
+}
+
+.trust-card {
+	display: flex;
+	align-items: center;
+	gap: var(--space-md);
+	padding: 18px;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--rounded-lg);
+	box-shadow: var(--shadow-sm);
+	transition: var(--transition);
+}
+
+.trust-card:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--shadow-md);
+}
+
+.trust-icon {
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--primary-light);
+	color: var(--primary);
+	font-size: 1.2rem;
+	flex-shrink: 0;
+}
+
+.trust-info h4 {
+	margin-bottom: 4px;
+}
+
+.trust-info p {
+	margin: 0;
+	font-size: .9rem;
+}
+
+/*=========================================
+    AUTH HEADER
+=========================================*/
+.auth-header {
+	text-align: center;
+	margin-bottom: var(--space-xl);
+}
+
+.auth-header h2 {
+	margin-bottom: var(--space-sm);
+}
+
+.auth-header p {
+	max-width: 340px;
+	margin: 0 auto;
+}
+
+/*=========================================
+    AUTH FORM
+=========================================*/
+.auth-form {
+	display: flex;
+	flex-direction: column;
+}
+
+/*=========================================
+    PASSWORD TOGGLE
+=========================================*/
+.password-toggle {
+	position: absolute;
+	top: 50%;
+	right: 18px;
+	transform: translateY(-50%);
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--text-secondary);
+	transition: var(--transition);
+}
+
+.password-toggle:hover {
+	color: var(--primary);
+}
+
+/*=========================================
+    FORM OPTIONS
+=========================================*/
+.form-options {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: var(--space-xl);
+}
+
+.remember-me {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	font-size: .95rem;
+	color: var(--text-secondary);
+}
+
+.remember-me input {
+	accent-color: var(--primary);
+	width: 16px;
+	height: 16px;
+}
+
+.forgot-password {
+	font-size: .95rem;
+	font-weight: 600;
+	color: var(--primary);
+	transition: var(--transition);
+}
+
+.forgot-password:hover {
+	color: var(--primary-hover);
+}
+
+/*=========================================
+    LOGIN BUTTON
+=========================================*/
+.login-btn {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	height: 56px;
+	font-size: 1rem;
+}
+
+/*=========================================
+    SOCIAL LOGIN
+=========================================*/
+.social-login {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--space-md);
+}
+
+/*=========================================
+    AUTH FOOTER
+=========================================*/
+.auth-footer {
+	margin-top: var(--space-xl);
+	text-align: center;
+}
+
+.auth-footer a {
+	color: var(--primary);
+	font-weight: 600;
+}
+
+.auth-footer a:hover {
+	color: var(--primary-hover);
+}
+
+.error-text {
+	margin-top: 6px;
+	display: block;
+	margin-top: 8px;
+}
+
+.is-invalid {
+	border-color: var(--danger) !important;
+}
+
+.is-valid {
+	border-color: var(--success) !important;
+}
+
+.input-group {
+	margin-bottom: 24px;
+}
+
+/*=========================================
+    ILLUSTRATION
+=========================================*/
+.auth-illustration {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.auth-illustration img {
+	width: 100%;
+	max-width: 420px;
+	height: auto;
+	object-fit: contain;
+	user-select: none;
+	pointer-events: none;
+}

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Confirmation | Hungrify</title>
+
+<link rel="stylesheet" href="css/order-confirmation.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+	rel="stylesheet">
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+	<!-- ===========================
+        HEADER
+============================ -->
+
+	<header class="header">
+
+		<div class="container header__container">
+
+			<a href="#" class="logo">
+
+				<div class="logo-placeholder">Logo</div>
+
+			</a> <a href="restaurant" class="btn btn--secondary"> <i
+				class="fa-solid fa-house"></i> Back to Home
+
+			</a>
+
+		</div>
+
+	</header>
+
+	<!-- ===========================
+        SUCCESS HERO
+============================ -->
+
+	<section class="success-hero">
+
+		<div class="container">
+
+			<div class="success-card">
+
+				<div class="success-icon">
+
+					<i class="fa-solid fa-circle-check"></i>
+
+				</div>
+
+				<div class="success-illustration">Illustration Placeholder</div>
+
+				<h1>Order Confirmed!</h1>
+
+				<p class="success-text">Thank you for choosing Hungrify.</p>
+
+				<p class="success-subtitle">Your delicious meal is being
+					prepared and will be delivered soon.</p>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- ===========================
+        MAIN CONTENT
+============================ -->
+
+	<main class="confirmation">
+
+		<div class="container">
+
+			<div class="confirmation-layout">
+
+				<!-- ===========================
+      LEFT CONTENT
+============================ -->
+
+				<section class="confirmation-left">
+
+					<!-- ===========================
+      ORDER INFORMATION
+============================ -->
+
+					<section class="card">
+
+						<div class="card__header">
+
+							<h2>Order Information</h2>
+
+						</div>
+
+						<div class="info-grid">
+
+							<div class="info-item">
+
+								<span class="label"> Order ID </span> <span class="value">
+
+									#ORDER_ID </span>
+
+							</div>
+
+							<div class="info-item">
+
+								<span class="label"> Order Date </span> <span class="value">
+
+									DD/MM/YYYY </span>
+
+							</div>
+
+							<div class="info-item">
+
+								<span class="label"> Payment Method </span> <span class="value">
+
+									PAYMENT_METHOD </span>
+
+							</div>
+
+							<div class="info-item">
+
+								<span class="label"> Order Status </span> <span
+									class="status success"> Confirmed </span>
+
+							</div>
+
+							<div class="info-item">
+
+								<span class="label"> Estimated Delivery </span> <span
+									class="value"> 30 - 40 Minutes </span>
+
+							</div>
+
+							<div class="info-item address">
+
+								<span class="label"> Delivery Address </span> <span
+									class="value"> CUSTOMER_ADDRESS </span>
+
+							</div>
+
+						</div>
+
+					</section>
+
+					<!-- ===========================
+        ORDERED ITEMS
+============================ -->
+
+					<section class="card">
+
+						<div class="card__header">
+
+							<h2>Ordered Items</h2>
+
+						</div>
+
+						<div class="ordered-items">
+
+							<!-- Repeat dynamically later -->
+
+							<article class="order-item">
+
+								<div class="order-item__image">Food Image</div>
+
+								<div class="order-item__content">
+
+									<h3>FOOD_NAME</h3>
+
+									<p>RESTAURANT_NAME</p>
+
+								</div>
+
+								<div class="order-item__meta">
+
+									<span> Qty : 2 </span> <strong> ₹299 </strong>
+
+								</div>
+
+							</article>
+
+							<article class="order-item">
+
+								<div class="order-item__image">Food Image</div>
+
+								<div class="order-item__content">
+
+									<h3>FOOD_NAME</h3>
+
+									<p>RESTAURANT_NAME</p>
+
+								</div>
+
+								<div class="order-item__meta">
+
+									<span> Qty : 1 </span> <strong> ₹199 </strong>
+
+								</div>
+
+							</article>
+
+						</div>
+
+					</section>
+
+					<!-- ===========================
+        DELIVERY TIMELINE
+============================ -->
+
+					<section class="card">
+
+						<div class="card__header">
+
+							<h2>Delivery Status</h2>
+
+						</div>
+
+						<div class="timeline">
+
+							<div class="timeline__item active">
+
+								<div class="timeline__icon">
+
+									<i class="fa-solid fa-check"></i>
+
+								</div>
+
+								<div>
+
+									<h4>Order Confirmed</h4>
+
+									<p>Your order has been successfully placed.</p>
+
+								</div>
+
+							</div>
+
+							<div class="timeline__item">
+
+								<div class="timeline__icon"></div>
+
+								<div>
+
+									<h4>Preparing Food</h4>
+
+								</div>
+
+							</div>
+
+							<div class="timeline__item">
+
+								<div class="timeline__icon"></div>
+
+								<div>
+
+									<h4>Out for Delivery</h4>
+
+								</div>
+
+							</div>
+
+							<div class="timeline__item">
+
+								<div class="timeline__icon"></div>
+
+								<div>
+
+									<h4>Delivered</h4>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</section>
+
+					<!-- ===========================
+    DELIVERY PARTNER
+============================ -->
+
+					<section class="card">
+
+						<div class="card__header">
+
+							<h2>Delivery Partner</h2>
+
+						</div>
+
+						<div class="partner">
+
+							<div class="partner__image">Photo</div>
+
+							<div class="partner__details">
+
+								<h3>DELIVERY_PARTNER_NAME</h3>
+
+								<p>Vehicle : BIKE_NUMBER</p>
+
+								<p>Contact : +91 XXXXXXXXXX</p>
+
+							</div>
+
+						</div>
+
+					</section>
+
+				</section>
+
+				<!-- ===========================
+      RIGHT SIDEBAR
+============================ -->
+
+				<aside class="confirmation-right">
+
+					<section class="card sticky">
+
+						<h2>Payment Summary</h2>
+
+						<div class="summary">
+
+							<div>
+
+								<span> Subtotal </span> <strong> ₹999 </strong>
+
+							</div>
+
+							<div>
+
+								<span> Delivery Fee </span> <strong> FREE </strong>
+
+							</div>
+
+							<div>
+
+								<span> Discount </span> <strong> -₹100 </strong>
+
+							</div>
+
+							<div>
+
+								<span> GST </span> <strong> ₹45 </strong>
+
+							</div>
+
+							<hr>
+
+							<div class="grand-total">
+
+								<span> Grand Total </span> <strong> ₹944 </strong>
+
+							</div>
+
+						</div>
+
+						<div class="action-buttons">
+
+							<a href="#" class="btn btn--primary"> Track Order </a> <a
+								href="#" class="btn btn--secondary"> Download Invoice </a> <a
+								href="home.jsp" class="btn btn--outline"> Continue Shopping
+
+							</a>
+
+						</div>
+
+					</section>
+
+				</aside>
+
+			</div>
+
+			<!-- ===========================
+      RECOMMENDATIONS
+============================ -->
+
+			<section class="recommendations">
+
+				<div class="section-header">
+
+					<h2>You May Also Like</h2>
+
+				</div>
+
+				<div class="recommendation-grid">
+
+					<article class="food-card">
+
+						<div class="food-card__image">Food Image</div>
+
+						<h3>FOOD_NAME</h3>
+
+						<p>Restaurant Name</p>
+
+						<strong> ₹199 </strong>
+
+						<button class="btn btn--primary">Add to Cart</button>
+
+					</article>
+
+					<article class="food-card">
+
+						<div class="food-card__image">Food Image</div>
+
+						<h3>FOOD_NAME</h3>
+
+						<p>Restaurant Name</p>
+
+						<strong> ₹249 </strong>
+
+						<button class="btn btn--primary">Add to Cart</button>
+
+					</article>
+
+					<article class="food-card">
+
+						<div class="food-card__image">Food Image</div>
+
+						<h3>FOOD_NAME</h3>
+
+						<p>Restaurant Name</p>
+
+						<strong> ₹299 </strong>
+
+						<button class="btn btn--primary">Add to Cart</button>
+
+					</article>
+
+					<article class="food-card">
+
+						<div class="food-card__image">Food Image</div>
+
+						<h3>FOOD_NAME</h3>
+
+						<p>Restaurant Name</p>
+
+						<strong> ₹349 </strong>
+
+						<button class="btn btn--primary">Add to Cart</button>
+
+					</article>
+
+				</div>
+
+			</section>
+
+		</div>
+
+	</main>
+
+	<footer class="footer">
+
+		<div class="container">
+
+			<p>© 2026 Hungrify. Fresh Food, Fast Delivery.</p>
+
+		</div>
+
+	</footer>
+
+</body>
+
+</html>
