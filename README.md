@@ -20,6 +20,35 @@
 
 ---
 
+## 📸 Application Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/hero-homepage.png" alt="Hungrify Homepage & Chef's Special" width="85%" />
+  <br><em>Homepage Hero — Food Delivery Landing Page & Dynamic Chef's Special</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/shopping-cart.png" alt="Hungrify Shopping Cart" width="85%" />
+  <br><em>Interactive Shopping Cart — Session-Based Quantity Adjustments & Real-Time Bill Calculation</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/checkout.png" alt="Hungrify Checkout" width="85%" />
+  <br><em>Order Checkout — Delivery Address Selection, Contact Details & Order Summary</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/order-confirmation.png" alt="Hungrify Order Confirmation" width="85%" />
+  <br><em>Order Confirmation & Tracking — Detailed Receipt with Status, Payment Breakdown & Invoice Download</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/menu-recommendations.png" alt="Hungrify Menu Recommendations" width="85%" />
+  <br><em>Dynamic Menu Recommendations — Cross-Sell Suggestions Based on Active Orders</em>
+</p>
+
+---
+
 ## 🏛️ Architecture & MVC Pattern
 
 Hungrify is architected following the classic **Model-View-Controller (MVC)** separation of concerns:
